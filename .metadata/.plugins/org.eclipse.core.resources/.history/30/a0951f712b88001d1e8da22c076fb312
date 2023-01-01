@@ -1,0 +1,9 @@
+package com.mapping.controller;
+
+import jakarta.persistence.Entity;
+
+@Entity
+
+public class Student {
+
+}

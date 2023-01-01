@@ -1,0 +1,5 @@
+package com.mappings.entities;
+
+public class EmployeeDto {
+
+}

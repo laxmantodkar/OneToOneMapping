@@ -1,0 +1,22 @@
+package com.mapping.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.mapping.entities.Training;
+import com.mapping.repository.TrainingRepository;
+
+@Service
+public class TrainingService {
+
+	@Autowired
+	private TrainingRepository trainingRepository;
+	
+	//get Training
+	public List<Training> getTraining()
+	{
+		return trainingRepository.findAll();
+	}
+}

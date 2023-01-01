@@ -1,0 +1,8 @@
+package com.mapping.entities;
+
+public class TrainingDto {
+
+	private int id;
+	private String trainingName;
+	private Student student;
+}

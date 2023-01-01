@@ -1,0 +1,46 @@
+package com.mapping.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.mapping.entities.Student;
+import com.mapping.repository.StudentRepository;
+
+@Service
+public class StudentService {
+
+	@Autowired
+	private StudentRepository studentRepository;
+  //add Student
+	public String addStudent(Student student)
+	{
+
+		try {
+			studentRepository.save(student);
+			
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+		return "Add Successfully";
+	}
+	
+	//Get student
+	
+	public List<Student> getStudent()
+	{
+		List<Student>  studentget=null;
+		try {
+			System.out.println("==========+++++++++++++");
+			studentRepository.findAll();
+			System.out.println("==================");
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+		return studentget;
+		
+	}
+	
+	
+}

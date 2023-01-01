@@ -1,0 +1,5 @@
+package com.mapping.entities;
+
+public class TrainingDto {
+
+}

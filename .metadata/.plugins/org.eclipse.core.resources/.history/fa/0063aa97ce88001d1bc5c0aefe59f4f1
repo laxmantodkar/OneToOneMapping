@@ -1,0 +1,17 @@
+package com.mappings.entities;
+
+import javax.management.loading.PrivateClassLoader;
+
+import jakarta.persistence.*;
+
+@Entity
+public class Employee {
+
+	@Id
+	@GeneratedValue(strategy =GenerationType.IDENTITY)
+	 private int Id;
+	 private String employeeName;
+	 @OneToOne
+	 private Manager manager;
+	 
+}

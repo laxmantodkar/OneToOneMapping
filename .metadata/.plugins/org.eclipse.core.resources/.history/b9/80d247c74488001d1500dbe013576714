@@ -1,0 +1,13 @@
+package com.mapping.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.mapping.repository.TrainingRepository;
+
+@Service
+public class TrainingService {
+
+	@Autowired
+	private TrainingRepository trainingRepository;
+}
